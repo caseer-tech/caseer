@@ -1,0 +1,727 @@
+<!DOCTYPE html><html class="scroll-smooth" lang="en" style=""><head></head><body class="bg-surface text-on-surface antialiased selection:bg-secondary selection:text-on-primary">
+
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>CASEER GRC Professional Practicum</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Manrope:wght@600;700&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "secondary-fixed": "#d7e3ff",
+                      "surface-container-high": "#dee8ff",
+                      "on-secondary-container": "#002d61",
+                      "tertiary-container": "#00241b",
+                      "on-secondary-fixed-variant": "#00458e",
+                      "outline-variant": "#c4c6ce",
+                      "on-primary-container": "#7587a7",
+                      "surface-variant": "#d8e3fb",
+                      "surface-container-lowest": "#ffffff",
+                      "on-surface-variant": "#44474d",
+                      "surface-container": "#e7eeff",
+                      "tertiary-fixed": "#6dfad2",
+                      "secondary-container": "#5095fe",
+                      "on-tertiary-fixed-variant": "#005140",
+                      "on-background": "#111c2d",
+                      "primary-fixed-dim": "#b5c7ea",
+                      "surface-container-low": "#f0f3ff",
+                      "secondary": "#0066cc",
+                      "on-tertiary-fixed": "#002018",
+                      "on-error-container": "#93000a",
+                      "outline": "#75777e",
+                      "surface-tint": "#4d5f7d",
+                      "on-error": "#ffffff",
+                      "inverse-surface": "#263143",
+                      "on-secondary-fixed": "#001b3e",
+                      "on-surface": "#111c2d",
+                      "tertiary": "#000705",
+                      "background": "#f9f9ff",
+                      "inverse-primary": "#b5c7ea",
+                      "on-secondary": "#ffffff",
+                      "surface-bright": "#f9f9ff",
+                      "inverse-on-surface": "#ecf1ff",
+                      "on-tertiary-container": "#00b894",
+                      "error": "#ba1a1a",
+                      "primary-fixed": "#d6e3ff",
+                      "on-primary-fixed": "#071c36",
+                      "secondary-fixed-dim": "#aac7ff",
+                      "on-primary": "#ffffff",
+                      "primary": "#0b1f3a",
+                      "error-container": "#ffdad6",
+                      "primary-container": "#0b1f3a",
+                      "surface-dim": "#cfdaf2",
+                      "on-tertiary": "#ffffff",
+                      "tertiary-fixed-dim": "#4bddb7",
+                      "surface-container-highest": "#d8e3fb",
+                      "on-primary-fixed-variant": "#364764",
+                      "surface": "#f9f9ff"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "sm": "12px",
+                      "base": "8px",
+                      "3xl": "64px",
+                      "2xl": "48px",
+                      "xs": "4px",
+                      "container-max": "1440px",
+                      "margin-mobile": "16px",
+                      "lg": "24px",
+                      "gutter": "24px",
+                      "xl": "32px",
+                      "margin-desktop": "40px",
+                      "md": "16px"
+              },
+              "fontFamily": {
+                      "label-sm": [
+                              "Inter"
+                      ],
+                      "label-md": [
+                              "Inter"
+                      ],
+                      "body-sm": [
+                              "Inter"
+                      ],
+                      "headline-lg": [
+                              "Manrope"
+                      ],
+                      "headline-md": [
+                              "Manrope"
+                      ],
+                      "display-lg": [
+                              "Manrope"
+                      ],
+                      "body-lg": [
+                              "Inter"
+                      ],
+                      "body-md": [
+                              "Inter"
+                      ],
+                      "headline-lg-mobile": [
+                              "Manrope"
+                      ],
+                      "headline-sm": [
+                              "Manrope"
+                      ]
+              },
+              "fontSize": {
+                      "label-sm": [
+                              "12px",
+                              {
+                                      "lineHeight": "16px",
+                                      "letterSpacing": "0.04em",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "label-md": [
+                              "14px",
+                              {
+                                      "lineHeight": "16px",
+                                      "letterSpacing": "0.01em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "body-sm": [
+                              "14px",
+                              {
+                                      "lineHeight": "20px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-lg": [
+                              "32px",
+                              {
+                                      "lineHeight": "40px",
+                                      "letterSpacing": "-0.01em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "headline-md": [
+                              "24px",
+                              {
+                                      "lineHeight": "32px",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "display-lg": [
+                              "48px",
+                              {
+                                      "lineHeight": "56px",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "body-lg": [
+                              "18px",
+                              {
+                                      "lineHeight": "28px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "body-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "24px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-lg-mobile": [
+                              "24px",
+                              {
+                                      "lineHeight": "32px",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "headline-sm": [
+                              "20px",
+                              {
+                                      "lineHeight": "28px",
+                                      "fontWeight": "600"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+      </script>
+<style>
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        .bento-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 24px;
+        }
+        .bento-item-large {
+            grid-column: span 2;
+        }
+        @media (max-width: 768px) {
+            .bento-item-large {
+                grid-column: span 1;
+            }
+        }
+        .tab-content {
+            display: none;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+        }
+        .tab-content.active {
+            display: block;
+            opacity: 1;
+        }
+        .faq-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+        }
+        .faq-item.active .faq-content {
+            max-height: 500px;
+        }
+        .faq-item.active .material-symbols-outlined.icon-expand {
+            transform: rotate(180deg);
+        }
+        
+        /* Mobile Menu Transitions */
+        .mobile-menu-overlay {
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s ease, visibility 0.3s ease;
+        }
+        .mobile-menu-overlay.active {
+            opacity: 1;
+            visibility: visible;
+        }
+        .mobile-menu-content {
+            transform: translateX(100%);
+            transition: transform 0.3s ease-in-out;
+        }
+        .mobile-menu-overlay.active .mobile-menu-content {
+            transform: translateX(0);
+        }
+      </style>
+<!-- Navigation -->
+<nav class="bg-surface-container-lowest dark:bg-on-background full-width top-0 sticky z-50 border-b border-outline-variant dark:border-on-surface-variant shadow-sm dark:shadow-none">
+<div class="flex justify-between items-center w-full px-margin-desktop py-md max-w-container-max mx-auto">
+<div class="font-display-lg text-display-lg font-bold text-on-background dark:text-surface-container-low tracking-tight">
+                CASEER Labs
+            </div>
+<div class="hidden md:flex space-x-lg items-center font-label-md text-label-md"><a class="text-on-surface-variant dark:text-surface-variant hover:text-secondary dark:hover:text-secondary-fixed-dim transition-colors duration-200" href="#about">About</a><a class="text-on-surface-variant dark:text-surface-variant hover:text-secondary dark:hover:text-secondary-fixed-dim transition-colors duration-200" href="#curriculum">Curriculum</a><a class="text-on-surface-variant dark:text-surface-variant hover:text-secondary dark:hover:text-secondary-fixed-dim transition-colors duration-200" href="#portfolio">Portfolio</a><a class="text-on-surface-variant dark:text-surface-variant hover:text-secondary dark:hover:text-secondary-fixed-dim transition-colors duration-200" href="#pricing">Pricing</a><a class="text-on-surface-variant dark:text-surface-variant hover:text-secondary dark:hover:text-secondary-fixed-dim transition-colors duration-200" href="#faqs">FAQs</a></div>
+<a target="blank" href="grc-application.html" ><button class="hidden md:flex bg-primary-container text-on-primary px-xl py-sm rounded-lg font-label-md text-label-md hover:opacity-90 transition-opacity">
+                Apply Now
+            </button></a>
+<button class="md:hidden text-on-surface flex items-center justify-center p-2" id="mobile-menu-open">
+<span class="material-symbols-outlined text-3xl">menu</span>
+</button>
+</div>
+</nav>
+<!-- Mobile Menu Overlay -->
+<div class="mobile-menu-overlay fixed inset-0 z-[100] bg-on-background/40 backdrop-blur-sm md:hidden" id="mobile-menu-container">
+<div class="mobile-menu-content absolute right-0 top-0 h-full w-4/5 max-w-sm bg-primary-container shadow-2xl flex flex-col">
+<!-- Mobile Menu Header -->
+<div class="flex items-center justify-between p-lg border-b border-outline-variant/20">
+<div class="font-display-lg text-headline-md font-bold text-on-primary tracking-tight">CASEER Labs</div>
+<button class="text-on-primary p-2" id="mobile-menu-close">
+<span class="material-symbols-outlined text-3xl">close</span>
+</button>
+</div>
+<!-- Mobile Menu Links -->
+<div class="flex-1 overflow-y-auto py-xl px-lg space-y-lg">
+<nav class="flex flex-col space-y-md">
+<a class="text-headline-sm font-headline-sm text-surface-container-low hover:text-secondary-fixed transition-colors mobile-nav-link" href="#about">About</a>
+<a class="text-headline-sm font-headline-sm text-surface-container-low hover:text-secondary-fixed transition-colors mobile-nav-link" href="#curriculum">Curriculum</a>
+<a class="text-headline-sm font-headline-sm text-surface-container-low hover:text-secondary-fixed transition-colors mobile-nav-link" href="#portfolio">Portfolio</a>
+<a class="text-headline-sm font-headline-sm text-surface-container-low hover:text-secondary-fixed transition-colors mobile-nav-link" href="#pricing">Pricing</a>
+<a class="text-headline-sm font-headline-sm text-surface-container-low hover:text-secondary-fixed transition-colors mobile-nav-link" href="#faqs">FAQs</a>
+</nav>
+</div>
+<!-- Mobile Menu Footer / CTA -->
+<div class="p-lg border-t border-outline-variant/20 bg-primary/30">
+<a target="blank" href="grc-application.html" ><button class="w-full bg-secondary text-on-primary py-md rounded-lg font-label-md text-label-md hover:bg-opacity-90 transition-colors shadow-lg uppercase tracking-wide">
+                Apply for Cohort 1
+            </button></a>
+</div>
+</div>
+</div>
+<!-- Hero Section -->
+<section class="relative pt-3xl pb-3xl overflow-hidden min-h-screen flex items-center">
+<div class="absolute inset-0 z-0">
+<div class="w-full h-full bg-cover bg-center opacity-10" data-alt="A modern corporate boardroom with executives reviewing compliance frameworks on large digital displays. High-key, bright lighting with a crisp white and deep navy color palette, conveying an atmosphere of professional rigor and enterprise governance." style="background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuA2EfMi9WltUQePNQmD0nsZj7mMms8opsMTmwTz6WDoqSSbYWJJfO_lejrHLfd3Qb3i9HkTnY0X7_MnhzpFTvo4gtDnMjYCXESFLLg08PDI9a2ter1WxoHnD-cWeBUCzPfjc2CyMFlPRf3i0aqsP3riQNG6YFrUJE5Eo_5n4DGhwjRT8xjiosEvC3NrxCSAr2gt0pPI3FDhvzntOZYAGR-ArxXgw1Uadtj81_s-xacJX-YI-hyL7KppveLb1eplh726kFvMp45BQFE&quot;);"></div>
+<div class="absolute inset-0 bg-gradient-to-r from-surface via-surface/90 to-transparent"></div>
+</div>
+<div class="max-w-container-max mx-auto px-margin-desktop relative z-10 w-full">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-2xl items-center mb-2xl">
+<div class="max-w-2xl">
+<div class="inline-flex items-center gap-2 px-sm py-xs rounded-full bg-surface-container-high border border-outline-variant/30 mb-lg">
+<span class="w-2 h-2 rounded-full bg-secondary-container"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">CASEER Labs GRC Professional Practicum • Cohort 1</span>
+</div>
+<h1 class="font-display-lg text-display-lg text-on-surface mb-lg text-balance"><strong data-start="924" data-end="981">From Learning Frameworks to Delivering Real GRC Work.<br></strong></h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-xl text-pretty max-w-xl">The CASEER Labs GRC Professional Practicum is a four-week, cohort-based program designed to help aspiring and early-career professionals gain practical Governance, Risk, and Compliance experience. Through real-world projects, industry frameworks, expert guidance, and portfolio-ready deliverables, you'll build the confidence and practical skills needed to contribute to modern GRC initiatives.</p>
+<div class="flex flex-wrap gap-sm mb-lg">
+<span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-surface-container border border-outline-variant/20 font-label-sm text-label-sm text-on-surface-variant"><span class="material-symbols-outlined text-sm">schedule</span>4-Week Cohort</span>
+<span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-surface-container border border-outline-variant/20 font-label-sm text-label-sm text-on-surface-variant"><span class="material-symbols-outlined text-sm">video_camera_front</span> Live sessions</span>
+<span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-surface-container border border-outline-variant/20 font-label-sm text-label-sm text-on-surface-variant"><span class="material-symbols-outlined text-sm">fact_check</span>Practical Projects</span>
+<span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-surface-container border border-outline-variant/20 font-label-sm text-label-sm text-on-surface-variant"><span class="material-symbols-outlined text-sm">assignment</span> Portfolio Development</span>
+<span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-surface-container border border-outline-variant/20 font-label-sm text-label-sm text-on-surface-variant"><span class="material-symbols-outlined text-sm">groups</span> Small Cohort</span>
+</div>
+<div class="flex flex-wrap gap-md">
+<a target="blank" href="grc-application.html" ><button class="bg-primary-container text-on-primary px-xl py-sm rounded-lg font-label-md text-label-md hover:bg-on-surface transition-colors shadow-sm">
+                            Apply for Cohort 1
+                        </button></a>
+<a target="blank" href="" ><button class="bg-surface text-on-surface border border-outline-variant px-xl py-sm rounded-lg font-label-md text-label-md hover:bg-surface-container-low transition-colors shadow-sm">
+                            View the Curriculum
+                        </button></a>
+</div>
+</div>
+<div class="hidden lg:block relative">
+<img alt="Executives in a meeting" class="rounded-xl shadow-2xl border border-outline-variant/30 object-cover w-full h-[500px]" src="grc-image3.png">
+<!-- Decorative background elements -->
+<div class="absolute -top-10 -right-10 w-64 h-64 bg-secondary-fixed/30 rounded-full blur-3xl -z-10"></div>
+<div class="absolute -bottom-10 -left-10 w-48 h-48 bg-tertiary-fixed/20 rounded-full blur-2xl -z-10"></div>
+</div>
+</div>
+<!-- Statistics Row -->
+<div class="grid grid-cols-2 md:grid-cols-4 gap-lg">
+<div class="bg-surface-container-lowest p-lg rounded-xl border border-outline-variant shadow-sm text-center">
+<div class="font-display-lg text-secondary mb-xs">4</div>
+<div class="font-label-md text-on-surface-variant">Weeks. Starts August 04</div>
+</div>
+<div class="bg-surface-container-lowest p-lg rounded-xl border border-outline-variant shadow-sm text-center">
+<div class="font-display-lg text-secondary mb-xs">2<br></div>
+<div class="font-label-md text-on-surface-variant">Portfolio Deliverables</div>
+</div>
+<div class="bg-surface-container-lowest p-lg rounded-xl border border-outline-variant shadow-sm text-center">
+<div class="font-display-lg text-secondary mb-xs"><span class="material-symbols-outlined text-4xl">verified</span></div>
+<div class="font-label-md text-on-surface-variant">Expert Feedback</div>
+</div>
+<div class="bg-surface-container-lowest p-lg rounded-xl border border-outline-variant shadow-sm text-center">
+<div class="font-display-lg text-secondary mb-xs"><span class="material-symbols-outlined text-4xl">group</span></div>
+<div class="font-label-md text-on-surface-variant">Individual Support<br></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Why This Practicum -->
+<section class="py-3xl bg-surface-container-lowest border-y border-outline-variant/30" id="about">
+<div class="max-w-container-max mx-auto px-margin-desktop">
+<div class="text-center mb-2xl">
+<h2 class="font-display-lg text-display-lg text-on-surface mb-md">Why This Practicum?</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto"><strong data-start="1274" data-end="1319">Practical Experience Makes the Difference</strong></p><p class="font-body-md text-body-md text-on-surface-variant max-w-2xl mx-auto mt-sm">Every participant graduates with practical documentation that demonstrates their ability to perform essential GRC activities.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-lg">
+<div class="flex flex-col items-center text-center p-md">
+<div class="w-16 h-16 rounded-xl bg-surface-container flex items-center justify-center mb-md text-secondary">
+<span class="material-symbols-outlined text-3xl">model_training</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface mb-sm">Hands-on Experience</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Stop reading textbooks and start implementing real frameworks. You'll work on the exact types of challenges GRC professionals face daily.</p>
+</div>
+<div class="flex flex-col items-center text-center p-md">
+<div class="w-16 h-16 rounded-xl bg-surface-container flex items-center justify-center mb-md text-secondary">
+<span class="material-symbols-outlined text-3xl">folder_special</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface mb-sm">Build Your Portfolio</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Don't just say you know GRC; show it. Leave the program with 4 concrete deliverables demonstrating your competence to prospective employers.</p>
+</div>
+<div class="flex flex-col items-center text-center p-md">
+<div class="w-16 h-16 rounded-xl bg-surface-container flex items-center justify-center mb-md text-secondary">
+<span class="material-symbols-outlined text-3xl">workspace_premium</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface mb-sm">Expert Guidance</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Learn directly from seasoned practitioners who bring years of enterprise consulting experience into every live session.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Portfolio You'll Build -->
+<section class="py-3xl bg-surface" id="portfolio">
+<div class="max-w-container-max mx-auto px-margin-desktop">
+<div class="text-center mb-2xl">
+<h2 class="font-display-lg text-display-lg text-on-surface mb-md"><strong data-start="2011" data-end="2049">Build a Professional GRC Portfolio</strong></h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">
+            Practical deliverables to showcase your skills.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-lg">
+<div class="bg-surface-container-lowest p-lg rounded-xl border border-outline-variant shadow-sm">
+<h4 class="font-headline-sm text-headline-sm text-on-surface mb-sm">1. Risk Assessment Report</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-md">Conduct a comprehensive risk assessment for a simulated enterprise, identifying assets, threats, and vulnerabilities.</p>
+</div>
+<div class="bg-surface-container-lowest p-lg rounded-xl border border-outline-variant shadow-sm">
+<h4 class="font-headline-sm text-headline-sm text-on-surface mb-sm">2. Information Security Policies</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-md">Draft  core security policies (e.g., Access Control or Data Classification) aligned with industry best practices.</p>
+</div>
+<div class="bg-surface-container-lowest p-lg rounded-xl border border-outline-variant shadow-sm">
+<h4 class="font-headline-sm text-headline-sm text-on-surface mb-sm">3. Information Security Risk Register</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-md">Develop and maintain a structured information security risk register using industry-standard frameworks to ensure comprehensive visibility and proactive mitigation strategies.</p>
+</div>
+<div class="bg-surface-container-lowest p-lg rounded-xl border border-outline-variant shadow-sm">
+<h4 class="font-headline-sm text-headline-sm text-on-surface mb-sm">4. Compliance Gap Assessment</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-md">Evaluate compliance against selected frameworks and recommend improvements.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Learning Experience -->
+<section class="py-3xl bg-surface-container-lowest border-t border-outline-variant/30">
+<div class="max-w-container-max mx-auto px-margin-desktop">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-2xl items-center">
+<div>
+<h2 class="font-display-lg text-display-lg text-on-surface mb-md">The Learning Experience</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-lg text-pretty">
+                        This is an intensive, interactive program designed for active participation and peer collaboration.
+                    </p>
+<ul class="space-y-md">
+<li class="flex items-start gap-md">
+<span class="material-symbols-outlined text-secondary mt-1">video_camera_front</span>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Weekly Live Sessions</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Engage in interactive lectures and collaborative workshops with your cohort and instructor.</p>
+</div>
+</li>
+<li class="flex items-start gap-md">
+<span class="material-symbols-outlined text-secondary mt-1">assignment</span>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Practical Assignments</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Apply concepts immediately to complete your weekly portfolio deliverables.</p>
+</div>
+</li>
+<li class="flex items-start gap-md">
+<span class="material-symbols-outlined text-secondary mt-1">forum</span>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Cohort Community</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Connect with peers, share insights, and build your professional network in our dedicated community space.</p>
+</div>
+</li>
+</ul>
+</div>
+<div class="rounded-xl overflow-hidden border border-outline-variant shadow-sm relative h-full min-h-[400px]">
+<img alt="Modern enterprise cybersecurity operations center" class="object-cover w-full h-full absolute inset-0" src="grc-image4.jpeg">
+</div>
+</div>
+</div>
+</section>
+<!-- Program Structure Section -->
+<section class="py-3xl bg-surface border-t border-outline-variant/30" id="curriculum">
+<div class="max-w-container-max mx-auto px-margin-desktop">
+<div class="text-center mb-2xl">
+<h2 class="font-display-lg text-display-lg text-on-surface mb-md">4-Week Program Structure</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">
+                An intensive journey to master essential GRC skills.
+            </p>
+</div>
+<div class="max-w-4xl mx-auto relative border-l-2 border-outline-variant/50 ml-md md:mx-auto">
+<div class="mb-xl relative pl-lg md:pl-0">
+<div class="md:w-1/2 md:pr-xl md:text-right relative">
+<div class="absolute w-4 h-4 rounded-full bg-secondary left-[-9px] md:left-auto md:right-[-9px] top-1"></div>
+<div class="text-secondary font-label-sm mb-xs">Week 1</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-xs">Governance &amp; Frameworks</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Understand the foundations of IT governance, explore key frameworks (NIST, ISO 27001), and learn how to align security strategy with business objectives.</p>
+</div>
+</div>
+<div class="mb-xl relative pl-lg md:pl-0">
+<div class="md:w-1/2 md:ml-auto md:pl-xl relative">
+<div class="absolute w-4 h-4 rounded-full bg-secondary left-[-9px] top-1"></div>
+<div class="text-secondary font-label-sm mb-xs">Week 2</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-xs">Risk Assessment Essentials</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Dive into risk management methodologies. Learn to identify, assess, and document risks using qualitative and quantitative approaches.</p>
+</div>
+</div>
+<div class="mb-xl relative pl-lg md:pl-0">
+<div class="md:w-1/2 md:pr-xl md:text-right relative">
+<div class="absolute w-4 h-4 rounded-full bg-secondary left-[-9px] md:left-auto md:right-[-9px] top-1"></div>
+<div class="text-secondary font-label-sm mb-xs">Week 3</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-xs">Compliance &amp; Auditing</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Navigate complex regulatory landscapes. Practice mapping controls to compliance requirements and conducting gap analyses.</p>
+</div>
+</div>
+<div class="mb-xl relative pl-lg md:pl-0">
+<div class="md:w-1/2 md:ml-auto md:pl-xl relative">
+<div class="absolute w-4 h-4 rounded-full bg-secondary left-[-9px] top-1"></div>
+<div class="text-secondary font-label-sm mb-xs">Week 4</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-xs">Vendor Risk &amp; Portfolio Review</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Master third-party risk management. Finalize your deliverables and participate in a comprehensive portfolio review.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Who Should Apply Tab -->
+<section class="py-3xl bg-surface-container-lowest border-t border-outline-variant/30">
+<div class="max-w-container-max mx-auto px-margin-desktop">
+<div class="text-center mb-2xl">
+<h2 class="font-display-lg text-display-lg text-on-surface mb-md">Who Should Apply</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-lg">
+<div class="text-center p-lg bg-surface rounded-xl border border-outline-variant/50">
+<div class="w-16 h-16 mx-auto rounded-full bg-surface-container flex items-center justify-center mb-md text-primary">
+<span class="material-symbols-outlined text-3xl">school</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface mb-sm">Recent Graduates & Students</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Bridge the gap between your IT or Business degree and the practical requirements of entry-level GRC roles.</p>
+</div>
+<div class="text-center p-lg bg-surface rounded-xl border border-outline-variant/50">
+<div class="w-16 h-16 mx-auto rounded-full bg-surface-container flex items-center justify-center mb-md text-primary">
+<span class="material-symbols-outlined text-3xl">swap_horiz</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface mb-sm">Career Switchers</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Transition smoothly from IT support, network administration, or legal fields into specialized GRC consulting.</p>
+</div>
+<div class="text-center p-lg bg-surface rounded-xl border border-outline-variant/50">
+<div class="w-16 h-16 mx-auto rounded-full bg-surface-container flex items-center justify-center mb-md text-primary">
+<span class="material-symbols-outlined text-3xl">upgrade</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface mb-sm">Business Professionals</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Accelerate your career trajectory by gaining hands-on experience with advanced frameworks and strategic risk modeling.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Why CASEER Labs -->
+<section class="py-3xl bg-surface border-t border-outline-variant/30">
+<div class="max-w-container-max mx-auto px-margin-desktop">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-2xl items-center">
+<div>
+<h2 class="font-display-lg text-display-lg text-on-surface mb-md">Why CASEER Labs?</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-lg">
+                CASEER Labs is the professional development and research division of CASEER Ltd. We design learning experiences that emphasize practical application, measurable outcomes, and continuous improvement. Our programs combine internationally recognized frameworks, realistic business scenarios, and expert guidance to help participants build capabilities they can confidently apply in professional environments.
+            </p>
+</div>
+<div class="bg-surface-container-lowest p-lg rounded-xl border border-outline-variant shadow-sm">
+<img alt="GRC Skills and Portfolio Outcomes Infographic" class="rounded-lg w-full h-64 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDpFO9UsM40RInWTlZeGZIV5SaQs1wU4NIqhKxDsU10oOolibLxmUriXdBYWVmEppFF6B9chm005yYOXlibYyuJgnEEKwYL1p-mpzjmn0ex4Na2AahTyLTqW3Q0eKOB0txvhipe859nfF_yRafv0LR0BGKCX969JmHAHxyRTkQRYHvGRPkqm9OkM3kYR66rNle9ETrX7V7r3KZT9PAd9kPmGRdA2mpIhw8LFUgm6g1PlS0bW6lYz0cDKE0OR5bI7Bz7YQ1PYMHgUCE">
+</div>
+</div>
+</div>
+</section>
+<!-- Meet the Lead Facilitator -->
+<section class="py-3xl bg-surface-container-lowest border-t border-outline-variant/30">
+<div class="max-w-container-max mx-auto px-margin-desktop">
+<div class="text-center mb-xl">
+<h2 class="font-display-lg text-display-lg text-on-surface mb-md">Meet the Lead Facilitator</h2>
+</div>
+<div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-xl">
+<img alt="Facilitator" class="w-48 h-48 rounded-full object-cover border-4 border-surface shadow-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAzWPIz_ZNAETdoOOMAbgrtVTlhkTZJ6xUAr-hRVWwjC2OBJmABdaYqn0KQZ51MIqvtcFIxQsFfY0LtMpP-he1zS9AEUc57TOuauZFLL7DeoocCnb5fcaM1DvYatE15k-dwv_XRDruutwkzlEMR0HMVU8EvEmpPldK1QZuUuDj-YueQ4gcItdbeb_5X7mb6tA2PRosKAkqg7LzRt2fn-w5APPBLDBQf-2WZ2vNH2LvxQ_jhLhjcWwyAvSPrjIkkrsSVUWevZW7Pa1M">
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-xs">Fawaz Ahmadu</h3>
+<p class="font-label-md text-secondary mb-md">Cybersecurity Practitioner &amp; Educator</p>
+<p class="font-body-md text-on-surface-variant"><p data-start="5712" data-end="5802" class="PDq2pG_selectionAnchorContainer" style="line-height: 2">The CASEER GRC Professional Practicum is led by <strong data-start="5760" data-end="5777">Fauwaz Ahmadu</strong>, Founder of CASEER Labs.<br><span aria-hidden="true" class="PDq2pG_selectionAnchor"></span></p><p data-start="5804" data-end="6077">Fauwaz works at the intersection of cybersecurity, governance, risk management, compliance, artificial intelligence, and automation. His focus is helping professionals build practical capabilities through applied learning, industry frameworks, and project-based experience.</p><p data-start="6079" data-end="6201">The practicum reflects CASEER Labs' commitment to preparing professionals for real responsibilities, not just examinations.</p>
+
+</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Pricing Section -->
+<section class="py-3xl bg-surface border-t border-outline-variant/30" id="pricing">
+<div class="max-w-container-max mx-auto px-margin-desktop">
+<div class="text-center mb-2xl">
+<h2 class="font-display-lg text-display-lg text-on-surface mb-md"><strong data-start="6373" data-end="6404">Simple, Transparent Pricing</strong></h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">
+                Transparent pricing for a transformative professional development experience.
+            </p>
+</div>
+<div class="max-w-md mx-auto bg-surface-container-lowest rounded-2xl border-2 border-primary shadow-xl overflow-hidden">
+<div class="bg-primary-container p-xl text-center">
+<h3 class="font-headline-md text-headline-md text-on-primary mb-sm">Cohort 1 Enrollment</h3>
+<div class="font-display-lg text-display-lg text-on-primary font-bold">$100</div>
+<p class="font-body-sm text-body-sm text-primary-fixed-dim mt-sm">Limited seats available for the upcoming cohort</p>
+</div>
+<div class="p-xl">
+<ul class="space-y-md mb-xl">
+<li class="flex items-start gap-md">
+<span class="material-symbols-outlined text-on-tertiary-container">check_circle</span>
+<span class="font-body-md text-body-md text-on-surface">Full 4-Week Practicum Access</span>
+</li>
+<li class="flex items-start gap-md">
+<span class="material-symbols-outlined text-on-tertiary-container">check_circle</span>
+<span class="font-body-md text-body-md text-on-surface">Live Online  Sessions</span>
+</li>
+<li class="flex items-start gap-md">
+<span class="material-symbols-outlined text-on-tertiary-container">check_circle</span>
+<span class="font-body-md text-body-md text-on-surface">Real-world Scenarios &amp; Templates</span>
+</li>
+<li class="flex items-start gap-md">
+<span class="material-symbols-outlined text-on-tertiary-container">check_circle</span>
+<span class="font-body-md text-body-md text-on-surface">Portfolio Review &amp; Feedback</span>
+</li>
+<li class="flex items-start gap-md">
+<span class="material-symbols-outlined text-on-tertiary-container">check_circle</span>
+<span class="font-body-md text-body-md text-on-surface">Certificate of Completion</span>
+</li>
+</ul>
+<a target="blank" href="" ><button class="w-full bg-primary-container text-on-primary py-md rounded-lg font-label-md text-label-md hover:opacity-90 transition-opacity shadow-md">
+                    Apply Now
+                </button></a>
+</div>
+</div>
+</div>
+</section>
+<!-- FAQs Section -->
+<section class="py-3xl bg-surface-container-lowest border-t border-outline-variant/30" id="faqs">
+<div class="max-w-container-max mx-auto px-margin-desktop">
+<div class="text-center mb-2xl">
+<h2 class="font-display-lg text-display-lg text-on-surface mb-md">Frequently Asked Questions</h2>
+</div>
+<div class="max-w-3xl mx-auto space-y-sm">
+<div class="faq-item bg-surface border border-outline-variant rounded-lg overflow-hidden">
+<button class="faq-btn w-full px-lg py-md text-left flex justify-between items-center hover:bg-surface-container-low transition-colors">
+<span class="font-headline-sm text-headline-sm text-on-surface text-base">Is this program suitable for beginners?</span>
+<span class="material-symbols-outlined icon-expand text-on-surface-variant transition-transform">expand_more</span>
+</button>
+<div class="faq-content px-lg">
+<p class="font-body-md text-body-md text-on-surface-variant py-md border-t border-outline-variant/30">While a foundational understanding of IT or business processes is helpful, the practicum is designed to take you from foundational concepts to practical application. We provide pre-requisite reading materials for those starting fresh.</p>
+</div>
+</div>
+<div class="faq-item bg-surface border border-outline-variant rounded-lg overflow-hidden active">
+<button class="faq-btn w-full px-lg py-md text-left flex justify-between items-center hover:bg-surface-container-low transition-colors">
+<span class="font-headline-sm text-headline-sm text-on-surface text-base">How much time do I need to commit?</span>
+<span class="material-symbols-outlined icon-expand text-on-surface-variant transition-transform">expand_more</span>
+</button>
+<div class="faq-content px-lg">
+<p class="font-body-md text-body-md text-on-surface-variant py-md border-t border-outline-variant/30">The program runs for 4 weeks, requiring approximately 2-4 hours of commitment per week. This includes live sessions, collaborative project work, and independent study.</p>
+</div>
+</div>
+<div class="faq-item bg-surface border border-outline-variant rounded-lg overflow-hidden">
+<button class="faq-btn w-full px-lg py-md text-left flex justify-between items-center hover:bg-surface-container-low transition-colors">
+<span class="font-headline-sm text-headline-sm text-on-surface text-base">Are the live sessions mandatory?</span>
+<span class="material-symbols-outlined icon-expand text-on-surface-variant transition-transform">expand_more</span>
+</button>
+<div class="faq-content px-lg">
+<p class="font-body-md text-body-md text-on-surface-variant py-md border-t border-outline-variant/30">While highly recommended for the best experience, sessions are recorded for those who cannot attend live due to timezone differences or schedule conflicts.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Final CTA -->
+<section class="py-3xl bg-primary-container relative overflow-hidden">
+<div class="absolute inset-0 opacity-10 bg-[url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&amp;auto=format&amp;fit=crop&amp;w=2000&amp;q=80')] bg-cover bg-center mix-blend-screen"></div>
+<div class="max-w-3xl mx-auto px-margin-desktop relative z-10 text-center">
+<h2 class="font-display-lg text-display-lg text-on-primary mb-lg">Ready to Advance Your GRC Career?</h2>
+<p class="font-body-lg text-body-lg text-primary-fixed-dim mb-xl max-w-2xl mx-auto">
+            Join the next cohort of professionals transforming their knowledge into enterprise-ready expertise. Spaces are limited for our upcoming practicum.
+        </p>
+<div class="flex flex-col sm:flex-row gap-md justify-center">
+<a target="blank" href="grc-application.html" ><button class="bg-secondary text-on-primary px-2xl py-md rounded-lg font-label-md text-label-md hover:bg-opacity-90 transition-colors shadow-lg">
+                Apply for this Cohort
+            </button></a>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-on-background dark:bg-surface-container-lowest border-t border-on-surface-variant dark:border-outline-variant">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-xl w-full px-margin-desktop py-3xl max-w-container-max mx-auto">
+<div class="col-span-1 md:col-span-1">
+<div class="font-headline-md text-headline-md font-bold text-surface-container-lowest dark:text-on-background mb-lg">
+                    CASEER Labs
+                </div>
+<p class="font-body-sm text-body-sm text-surface-container-low dark:text-on-background max-w-xs">
+                    © 2026 CASEER Labs. All rights reserved. Built for enterprise excellence.
+                </p>
+</div>
+<div class="flex flex-col space-y-md">
+<a class="font-label-sm text-label-sm text-outline-variant dark:text-outline hover:text-secondary-fixed-dim dark:hover:text-on-secondary-container transition-colors" href="terms-and-privacy-policy.html">Privacy Policy</a>
+<a class="font-label-sm text-label-sm text-outline-variant dark:text-outline hover:text-secondary-fixed-dim dark:hover:text-on-secondary-container transition-colors" href="terms-and-privacy-policy.html">Terms of Service</a>
+</div>
+<div class="flex flex-col space-y-md">
+<a class="font-label-sm text-label-sm text-outline-variant dark:text-outline hover:text-secondary-fixed-dim dark:hover:text-on-secondary-container transition-colors" href="mailto:caseercybernetics@gmail.com">Contact Us</a>
+</div>
+</div>
+</footer>
+<script>
+    // FAQ Accordion logic
+    document.querySelectorAll('.faq-btn').forEach(button => {
+        button.addEventListener('click', () => {
+            const faqItem = button.parentElement;
+            faqItem.classList.toggle('active');
+        });
+    });
+
+    // Mobile Menu logic
+    const openBtn = document.getElementById('mobile-menu-open');
+    const closeBtn = document.getElementById('mobile-menu-close');
+    const menuContainer = document.getElementById('mobile-menu-container');
+    const mobileLinks = document.querySelectorAll('.mobile-nav-link');
+
+    const toggleMenu = () => {
+        menuContainer.classList.toggle('active');
+        document.body.classList.toggle('overflow-hidden');
+    };
+
+    if (openBtn) openBtn.addEventListener('click', toggleMenu);
+    if (closeBtn) closeBtn.addEventListener('click', toggleMenu);
+    
+    // Close menu when a link is clicked
+    mobileLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            menuContainer.classList.remove('active');
+            document.body.classList.remove('overflow-hidden');
+        });
+    });
+
+    // Close menu when clicking overlay
+    menuContainer.addEventListener('click', (e) => {
+        if (e.target === menuContainer) {
+            toggleMenu();
+        }
+    });
+</script>
+
+
+```
+
+</body></html>
